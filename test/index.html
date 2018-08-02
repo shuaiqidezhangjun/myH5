@@ -13,14 +13,28 @@
         height: 100%;
     }
     @keyframes myfirst{
-        from {background: red}
-        to{background: green}
+        0%{opacity: 0}
+        25%{opacity: 100}
+        50%{opacity: 0}
+        100%{opacity: 0}
     }
-    h1{animation: myfirst 1s infinite}
+    @keyframes mysecondt{
+        0%{opacity: 0}
+        50%{opacity: 0}
+        75%{opacity: 100}
+        100%{opacity: 0}
+    }
+    #c1{animation: myfirst 7.4s infinite}
+    #c2{animation: mysecondt 7.4s infinite}
+    p{
+        font-size: 100px;
+        position: absolute;
+        text-align: center;
+    }
 </style>
 <body>
-<h1>帅气的张俊</h1>
-<div>这是帅气的张俊的新开始哦</div>
+<p id="c1">帅气的张俊</p>
+<p id="c2">这是帅气的张俊的新开始哦</p>
 <audio src="../music/冥月、Mario%20-%20若当来世.mp3" autoplay="autoplay" loop="loop"></audio>
 </body>
 </html>
